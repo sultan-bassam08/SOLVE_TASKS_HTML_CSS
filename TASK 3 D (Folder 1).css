@@ -1,0 +1,35 @@
+.body,html {
+    container: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+
+   }
+   .container {
+    text-align: center;
+    border: 2px solid grey;
+    height: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    
+   }
+   
+   .container h1, img, p:last-child {
+    align-self: center;
+   }
+   
+   .container p {
+    padding : 10 10px;
+    justify-self: right;
+   }
+   
+   .container hr
+    {
+    border: none;
+    height: 2px;
+    background-color: rgb(204, 33, 33);
+    margin: 10px 0;
+   }
