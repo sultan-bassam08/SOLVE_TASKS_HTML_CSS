@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task13.css">
+    <style>
+        .logo {
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .background-image {
+            width: 100%;
+            display: table;
+            margin: 0;
+
+
+            background-image: url("Res.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2 style="color: red; text-align: center;">Online<br><span style="color: black; font-size: 18px;">Food
+                    Shop</span></h2>
+            <hr>
+        </div>
+        <div style="background-color: gray; border-radius: 10%;">
+            <div class="logo">
+                <img src="food.png" alt="food" width="50px" height="50px" style="margin: auto;">
+            </div>
+            <nav class="nav" style="display: flex;">
+                <ul style="margin: auto; ">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Contact Us</a>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            <section class="background-image">
+                <div style="margin-top: 20px;">
+                    <h1 style="text-align: center;">Welcome To Online FoodShop</h1>
+                    <div style="text-align: center;">
+                        <a href="#"
+                            style="color: black; background-color: yellow;border: 1px solid black ; border-radius: 10px;">Order
+                            Now!</a>
+                    </div>
+                </div>
+                <div style="display: flex;justify-content: space-evenly;">
+                    <div>
+                        <img src="cook_1.jpg" />
+                    </div>
+                    <div>
+                        <img src="cook_2.png" />
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
+               <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: red ; font-weight: bold;text-align: center;">Futured Products</h2>
+               <div style="display: flex; justify-content: space-around;">
+                 <img src="food_1.jpg" alt="">
+                 <img src="food_2.jpg" alt="">
+                 <img src="food_3.jpg" alt="">
+               </div>
+            </section>
+        </main>
+        <footer>
+          <p style="text-align: center;">Copyright &copy; 2020-2021 Online FoodShop, All rights are reseved</p>
+        </footer>
+</body>
+
+</html>
