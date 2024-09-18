@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Grid container setup (same as before) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 800px;
+  margin:auto;
+}
+
+/* Each image container */
+.image-container {
+  position: relative; /* Set container to relative to place notes inside */
+}
+
+/* Style the images */
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style for the note (small label) */
+.note {
+  position: absolute;
+  top: 1px; /* Adjust top position */
+  left: 1px; /* Adjust left position */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: #fff; /* White text color */
+  padding: 5px;
+  font-size: 8px; 
+  
+}
+    </style>
+</head>
+<body>
+    
+
+<div class="grid-container">
+    <div class="image-container">
+      <img src="italy.jpeg" alt="Picture 1">
+      <span class="note">available</span>
+    </div>
+    <div class="image-container">
+      <img src="ITALY 2.jpeg" alt="Picture 2">
+      <span class="note">sold</span>
+    </div>
+    <div class="image-container">
+      <img src="ITALY 2.jpeg" alt="Picture 3">
+      <span class="note">available</span>
+    </div>
+    <div class="image-container">
+      <img src="ITALY 4.jpeg" alt="Picture 4">
+      <span class="note">sold</span>
+    </div>
+  </div>
+</body>
+</html>
