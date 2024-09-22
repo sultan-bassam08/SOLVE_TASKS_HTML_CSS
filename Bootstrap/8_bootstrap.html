@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 8</title>
+
+        <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        .me{
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            height: 100px;
+        }
+
+        @media (max-width:800px){
+            .me {
+                grid-template-columns: auto;
+                grid-template-rows: 200PX 200PX 200PX;
+                height: 100PX;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Media Queries</h1> <br>
+        <div class="me">
+            <div style="background-color: blue;">left content</div>
+            <div style="background-color: rgb(253, 253, 254);">main
+                content</div>
+            <div style="background-color: rgb(0, 255, 55);">rigth content</div>
+        </div>
+    </body>
+</html>

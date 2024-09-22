@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Buttons</title>
+
+        <!-- Link to Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+
+        <style>
+                body {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1em;
+                }
+                
+                form {
+                  font-family: Arial;
+                  width: 440px;
+                  margin: auto;
+                  padding: 30px 50px;
+                }
+                
+                .bigger-container {
+                  padding: 30px;
+                  background-color: #4e4d4d;
+                }
+                
+                input[type=email], input[type=submit],
+                input[type=password] {
+                  width: 300px;
+                  height: 50px;
+                  padding: 12px;
+                  margin: 3px 0;
+                  display: inline-block;
+                  box-sizing: border-box;
+                }
+                
+                input[type=checkbox] {
+                  margin-top: 16px;
+                }
+                
+                input[type=submit] {
+                  background-color: #04AA6D;
+                  color: #4e4d4d;
+                  border: none;
+                  margin-bottom: 5vh;
+                }
+                
+                input[type=submit]:hover {
+                  opacity: 0.8;
+                }
+            </style>
+
+    </head>
+
+    <body>
+
+        <form action="#">
+            <div class="bigger-container">
+                <h2>Please login</h2>
+            </div>
+
+            <div class="container" style="background-color:#4e4d4d">
+                <input type="email" placeholder="Email address" name="mail"
+                    required><br />
+                <input type="password" placeholder="Password" name="pass"
+                    required><br />
+                <label>
+                    <input type="checkbox" checked="checked" name="subscribe">
+                    Rememebar Me
+                </label>
+
+                <input type="submit" value="Subscribe">
+            </div>
+        </form>
+
+    </body>
+</html>
