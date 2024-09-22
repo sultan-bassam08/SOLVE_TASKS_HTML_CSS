@@ -1,0 +1,17 @@
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: colorChange 4s;
+
+}
+@keyframes colorChange{
+  0%,
+  100% {
+    background-color: red;
+  }
+  50%{
+    background-color: blue;
+  }
+}

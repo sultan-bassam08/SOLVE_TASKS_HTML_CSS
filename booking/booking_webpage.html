@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="icon" href="./image/image.png"  type="image/png"> 
+    <title>booking.com</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+             
+        }
+        header{
+            background-color: #003580;
+            height: 50vh;
+            padding: 30px 90px;
+            
+        }
+        .nav-ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            align-items: center;
+            list-style: none;
+            padding-right: 150px;
+            margin-top: 25px;
+            color: white;
+
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+         li  img {
+            width: 50px;
+            height: 50px; 
+        }
+        .nav2 {
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+            padding-left:50px;
+            margin: 60px;
+            list-style: none;
+            color: white;
+            
+          
+        }
+        .nav2 li:hover{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            
+        }
+        #container h1 ,p{
+            font-size:30px;
+            font-weight: bolder;
+            padding-left: 110px;
+            margin-top: 10px;
+            color: white;
+        }
+      
+    .search {
+        background-color: #003580;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .search form {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .search input, .search button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .search button {
+        background-color: #febb02;
+        color: white;
+        cursor: pointer;
+    }
+
+        .offers {
+  text-align: center;
+}
+
+.offer-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.offer-card {
+  width: 40%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card h3 {
+  margin-top: 0;
+}
+
+.offer-card p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+    
+    width: 400px;
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+
+}
+    </style>
+</head>
+
+<body>
+
+    <header >
+        <nav>
+
+       <div style="width: 70px; color: white; background-color: #003580;">
+        <img src="./image/image.png" alt="booking.com">
+       </div> 
+
+       <div>
+        <ul class="nav-ul" >
+            <li> JOD  </li>
+            <li> <img src="./image/amerca.png" alt="amrica flag"></li>
+            <li> <img src="./image/question mark.png " alt="question mark"></li>
+            <li> <img src="./image/notification.png" alt="notification"></li>
+            <li> <a href="https://www.booking.com/"></a>LiST Your Profile </li>
+            <li> <img src="./image/profile.png" alt="profile pic"></li>
+        </ul>
+       </div> 
+       
+    </nav>
+
+    <ul class="nav2">
+        <li>STAYS</li>
+        <li> FLIGHTS</li>
+        <li>CAR RENTALS</li>
+        <li>ATTRACTION</li>
+        <li>TAXI</li>
+    </ul>
+
+    <div id="container">
+    <h1>
+        Find your next stay
+    </h1>
+    <p>
+        Search low prices on hotels, homes and such more...
+    </p>
+    </div>  
+    
+</header> 
+
+
+<section class="search">
+    <form>
+        <input type="text" placeholder="Where are you going?" name="destination">
+        <input type="date" name="checkin">
+        <input type="date" name="checkout">
+        <input type="number" placeholder="Guests" name="guests">
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+<h1 style="padding-left: 50px; margin-top: 60px;">Offers</h1>
+<p id style="color: black ;">Promotions, deals and special offers for you</p>
+
+<div class="offers">
+    <div class="offer-cards">
+      <div class="offer-card">
+        <h3>Seize the moment</h3>
+        <p>Save 15% or more when you book and stay before 1 October 2024</p>
+        <button class="btn">Find Getaway Deals</button>
+      </div>
+      <div class="offer-card">
+        <h3>Go for a good time, not a long time</h3>
+        <p>Finish your year with a mini break. Save 15% or more when you book and stay by 7 January 2025.</p>
+        <button class="btn">Find Late Escape Deals</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+    </div>
+</footer>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: green;
+  }
+  50% {
+    background-color: rgb(175, 235, 13);
+  }
+  75% {
+    background-color: blue;
+  }
+}
+

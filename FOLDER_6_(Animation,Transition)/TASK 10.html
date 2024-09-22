@@ -1,0 +1,48 @@
+<!--*********Animation-Buttery**********-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #div-buttery {
+            border: solid 5px;
+            border-radius: 5px;
+            width: 120px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            animation-name: buttery;
+            animation-duration: 5s;
+        }
+
+        @keyframes buttery {
+            0% {
+                background-color: #ff0000;
+                width: 0;
+            }
+
+            100% {
+                background-color: #00c900;
+                width: 100px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div-buttery">
+    </div>
+</body>
+
+</html>
