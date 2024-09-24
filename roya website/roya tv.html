@@ -1,12 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./roya icon.png">
-    <title>Roya TV</title>
+    <title>موقع إخباري</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .top-bar {
+            background-color: #f1f1f1;
+            padding: 10px 0;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .login-buttons .btn {
+            margin-left: 10px;
+        }
+        .navbar-custom {
+            background-color: #fff;
+            border-top: 2px solid #f1f1f1;
+            border-bottom: 2px solid #f1f1f1;
+        }
+        .navbar-custom .nav-link {
+            color: #000;
+            margin-right: 15px;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #0056b3;
+        }
+        .news-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px 0;
+    
+}
+.news-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+.news-item p {
+    font-size: 14px;
+    margin: 0;
+}
+.main-news {
+    position: relative;
+    color: white;
+}
+.main-news img {
+    width: 50%;
+    height: auto;
+}
+.main-news h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    margin: 0;
+    font-size: 24px;
+}
+.main-news p {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    margin: 0;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+    </style>
 </head>
 <body>
-    
+
+<!-- Top bar with login and language options -->
+<div class="container-fluid top-bar">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <p class="mb-0">مرحباً بك في موقع رؤيا الإخباري لتطلع على أحدث المستجدات في الأردن والعالم</p>
+            </div>
+            <div class="d-flex align-items-center login-buttons">
+                <a href="#" class="btn btn-outline-dark">تسجيل الدخول <i class="bi bi-box-arrow-in-right"></i></a>
+                <a href="#" class="btn btn-danger">البث المباشر <i class="bi bi-tv"></i></a>
+                <a href="#" class="mx-2">English</a>
+                <a href="#"><i class="bi bi-moon"></i></a>
+                <a href="#"><i class="bi bi-search"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./roya icon.png " alt="رؤيا الإخباري">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">الأردن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">فلسطين</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">عربي ودولي</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">طقس</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">اقتصاد</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">رياضة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">تكنولوجيا</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- News Section -->
+<div class="container mt-4">
+<div class="row">
+<!-- Sidebar News List -->
+<div class="col-md-4">
+    <div class="news-item">
+        <img src="./roya icon.png " alt="خبر 1">
+        <div>
+            <p><strong>طقس:</strong> تقلبات حالة الطقس خلال عطلة نهاية الأسبوع في الأردن</p>
+            <small>منذ 3 ساعات | 0 تعليقات</small>
+        </div>
+    </div>
+    <div class="news-item">
+        <img src="./roya icon.png " alt="خبر 2">
+        <div>
+            <p><strong>فلسطين:</strong> 349 يوما من العدوان على غزة، صراع وهدنة..</p>
+            <small>منذ 5 ساعات | 0 تعليقات</small>
+        </div>
+    </div>
+    <div class="news-item">
+        <img src="./roya icon.png " alt="خبر 3">
+        <div>
+            <p><strong>دراسة:</strong> ما تأثير ماذا يحدث لدماغ المرأة العامل؟</p>
+            <small>منذ 2 ساعات | 0 تعليقات</small>
+        </div>
+    </div>
+    <div class="news-item">
+        <img src="./roya icon.png " alt="خبر 4">
+        <div>
+            <p><strong>مواهبك:</strong> إليكم نصائح لتحسين تركيزك أثناء الدراسة</p>
+            <small>منذ 6 ساعات | 0 تعليقات</small>
+        </div>
+    </div>
+</div>
+
+<!-- Main News -->
+<div class="col-md-8">
+    <div class="main-news">
+        <img src ="./roya icon.png " alt="صورة الخبر الرئيسي">
+        <h2>ضريبة الدخل تنشر الأسعار النهائية لجميع أصناف السجائر في الأردن</h2>
+        <p>منذ 30 دقيقة | اقتصاد</p>
+    </div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+ <img style="padding-right: 120px;" src="./royaa.PNG" alt="">
+<footer class="container-fluid bg-light py-3">
+    <div class="row text-center">
+        <!-- Links Section -->
+        <div class="col-12 mb-3">
+            <a href="#" class="text-decoration-none text-dark">سياسة الخصوصية</a>
+            <span class="mx-2 text-muted">|</span>
+            <a href="#" class="text-decoration-none text-dark">الملكية الفكرية</a>
+            <span class="mx-2 text-muted">|</span>
+            <a href="#" class="text-decoration-none text-dark">معايير التصحيح</a>
+        </div>
+        <!-- Social Media Icons Section -->
+        <div class="col-12">
+            <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-whatsapp fa-2x"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-telegram-plane fa-2x"></i></a>
+            <a href="#" class="text-dark me-3"><i class="fab fa-tiktok fa-2x"></i></a>
+            <a href="#" class="text-dark"><span class="p-2 rounded-circle bg-danger text-white">نبض</span></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Include FontAwesome for the icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+  
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Bootstrap JS and Icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.js"></script>
+
 </body>
 </html>
